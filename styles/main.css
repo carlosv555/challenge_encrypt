@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root
+{
+    --color-bg: #000000;
+	--color-btn: #01080e;
+    --color-btn-hover: linear-gradient(90deg,#012938 0,#012938 0,#012938 15%,#010e15);
+
+    --outfit: 'Outfit', sans-serif;
+	--comic: 'Comic Neue', sans-serif;
+}
+
+body
+{
+    font-family: var(--comic);
+    background-color: var(--color-bg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	color: #FFFFFF;
+}
+
+.container
+{
+    width: 90%;
+	display: flex;
+    flex-direction: row;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.left
+{
+	width: 50%;
+	margin: 2%;
+}
+
+.right
+{
+	width: 40%;
+	margin: 2%;
+}
+
+.form-group
+{
+    margin-bottom: 15px;
+}
+
+label
+{
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+	font-family: var(--outfit);
+	background-color: #000000;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+}
+
+::placeholder
+{
+  color: #FFFFFF;
+  opacity: 1;
+}
+
+::-ms-input-placeholder
+{
+  color: #FFFFFF;
+}
+
+.button-group
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button
+{
+    background-color: var(--color-btn);
+    color: #FFFFFF;
+    border: 3px solid #175a70;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 22px;
+	font-weight: bold;
+}
+
+button:hover
+{
+    background-image: var(--color-btn-hover);
+	color: #d7f9ff;
+}
+
+button:disabled
+{
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+label
+{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px)
+{
+	
+}
+
+
+@media only screen and (max-width: 480px)
+{
+	.container
+	{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.left
+	{
+		width: 90%;
+		margin: 2%;
+	}
+
+	.right
+	{
+		width: 90%;
+		margin: 2%;
+	}
+	
+	.button-group
+	{
+		flex-direction: column;
+	}
+	
+	#btn-encrypt
+	{
+		margin: 5px 0 10px 0;
+	}
+	
+	#btn-decrypt
+	{
+		margin: 10px 0 5px 0;
+	}
+	
+}

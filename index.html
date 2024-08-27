@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge - Encriptador</title>
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+	<div>
+		<h1>Challenge de Encriptador/Desencriptador para el curso de Alura Latam</h1>
+	</div>
+    <div class="container">
+		
+		<div class="left">
+			<div class="form-group">
+				<label for="text-input">Ingrese el texto a encriptar o desencriptar:</label>
+				<textarea id="text-input" rows="10" placeholder="Escriba aquí..."></textarea>
+			</div>		
+
+			<div class="button-group">
+				<button id="btn-encrypt">Encriptar</button>
+				<button id="btn-decrypt">Desencriptar</button>
+			</div>
+		</div>
+		<div class="left">		
+			<div class="form-group">
+				<label for="result">Su texto convertido es:</label>
+				<textarea id="result" rows="10" placeholder="No hay texto encriptado o desencriptado por el momento" readonly></textarea>
+			</div>
+
+			<button id="btn-copy">Copiar Texto</button>
+		</div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
